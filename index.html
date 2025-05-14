@@ -42,6 +42,10 @@
             align-items: center;
             gap: 1rem;
         }
+        .hero img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
         .hero h1 { color: var(--white); font-size: 2rem; }
         .hero p { color: var(--white); font-size: 1rem; }
         .btn-group {
@@ -87,6 +91,7 @@
             .hero h1 { font-size: 1.5rem; }
             .hero p { font-size: 0.9rem; }
             .btn { padding: 0.6rem 1rem; font-size: 0.9rem; }
+            .hero img { max-width: 120px; }
         }
         @media (max-width: 480px) {
             header { padding: 1rem; }
@@ -99,6 +104,7 @@
 <body>
     <header>
         <div class="hero animate__animated animate__fadeIn">
+            <img src="img/logo.svg" alt="شعار المصيف">
             <h1>مصيف اللؤلؤة العائلي</h1>
             <p>للتواصل عبر صفحاتنا وحجوزات الشاليهات والاستراحات الصيفية</p>
             <div class="btn-group">

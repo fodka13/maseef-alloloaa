@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مصيف اللؤلؤة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #41bead;
+            --secondary: #246d63;
+            --white: #ffffff;
+            --bg-light: #f4f2ed;
+            --text-dark: #181717;
+            font-family: 'Cairo', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg-light); color: var(--text-dark); }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background: url('./img/23718.jpg') center/cover no-repeat;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .hero {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .hero h1 { color: var(--white); font-size: 2rem; }
+        .hero p { color: var(--white); font-size: 1rem; }
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            background: var(--primary);
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: var(--secondary); }
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col {
+            flex: 1 1 200px;
+            max-width: 300px;
+        }
+        .footer-col img { max-width: 187px; }
+        .footer-col h2 { margin-bottom: 0.5rem; color: var(--primary); }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin: 0.5rem 0; }
+        .footer-col ul li a { color: var(--white); text-decoration: none; }
+        .socials a { margin: 0 0.3rem; color: var(--white); font-size: 1.2rem; }
+        .copy a { color: var(--primary); text-decoration: none; }
+        @media (max-width: 720px) {
+            .hero h1 { font-size: 1.5rem; }
+            .hero p { font-size: 0.9rem; }
+            .btn { padding: 0.6rem 1rem; font-size: 0.9rem; }
+        }
+        @media (max-width: 480px) {
+            header { padding: 1rem; }
+            .hero { gap: 0.5rem; }
+            .btn-group { gap: 0.5rem; }
+            .footer-top { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero animate__animated animate__fadeIn">
+            <h1>مصيف اللؤلؤة العائلي</h1>
+            <p>للتواصل عبر صفحاتنا وحجوزات الشاليهات والاستراحات الصيفية</p>
+            <div class="btn-group">
+                <a href="https://wa.me/+218923571785" class="btn">واتساب</a>
+                <a href="https://www.facebook.com/profile.php?id=100085396007361" class="btn">فيسبوك</a>
+            </div>
+            <p>إدارة/ محمد الشلماني</p>
+        </div>
+    </header>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <img src="img/foote1r.svg" alt="">
+                <hr>
+                <p>لتصميم موقع مشابه توصل معي عبر الايقونات التالية</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/Mohammed.GD.66/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/+218942711759"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/channel/UC4ThVQKj9FuccsCavrK8-nw"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/mohammed-mkraz-419602270"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.behance.net/b4c8e617/projects"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h2>روابط سريعة</h2>
+                <ul>
+                    <li><a href="https://mohammedgd.github.io/Studio/">الرئيسية</a></li>
+                    <li><a href="https://mohammedgd.github.io/Studio/portfolio-details.html">شعاراتي</a></li>
+                    <li><a href="https://mohammedgd.github.io/Studio/service.html">الخدمات</a></li>
+                    <li><a href="https://mohammedgd.github.io/Studio/about.html">من أنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>حول الموقع</h2>
+                <p>موقع يتيح التواصل السهل وحجز الشاليهات والاستراحات الصيفية بضغطة زر.<br>نسخة بيتا من الموقع - إصدار 1.</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>All Rights Reserved 2025 | <a href="https://mohammedgd.github.io/Studio/" target="_blank">Designed By Mohammed Design</a> &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
